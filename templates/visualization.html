@@ -1,0 +1,61 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendation System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style></style>
+  </head>
+  <body>
+    <h1 class="text-center">Data Visualization</h1>
+
+    <div class="d-flex justify-content-end mb-3">
+      <a class="btn btn-primary" href="/logout">Logout</a>
+    </div>
+
+    <img src="{% static 'main/missing_values.png' %}" alt="missing values" />
+    <h3>Fig: Missing Value Percentage</h3>
+    <img src="{% static 'main/top_10_stock_codes.png' %}" alt="stock codes" />
+    <h3>Fig: Most Frequent Stock Codes</h3>
+    <img
+      src="{% static 'main/top_30_frequent_descriptions.png' %}"
+      alt="frequent descriptions"
+    />
+    <h3>Fig: Most Frequent Descriptions</h3>
+    <img
+      src="{% static 'main/per_of_outier_inlier.png' %}"
+      alt="outlier percentage"
+    />
+    <h3>Fig: Percentage of Inliers and Outliers</h3>
+    <img src="{% static 'main/coreraltions.png' %}" alt="coreraltion" />
+    <h3>Fig: Correlation Matrix</h3>
+    <img src="{% static 'main/CVcomponents.png' %}" alt="cvcomponent" />
+    <h3>Fig: Cumulative Variance vs. Number of components</h3>
+    <img src="{% static 'main/k_elbow_plot.png' %}" alt="K Elbow" />
+    <h3>Fig: K Means Clustering</h3>
+
+    <img
+      src="{% static 'main/distribution_of_customer.png' %}"
+      alt="distribution of customer"
+    />
+    <h3>Fig: Distribution of Customers across clusters</h3>
+    <img src="{% static 'main/radar_chart.png' %}" alt="radar" />
+    <h3>Fig: Radar Chart</h3>
+    <img src="{% static 'main/histogram.png' %}" alt="histogram" />
+    <h3>Fig: Histogram Chart</h3>
+  </body>
+</html>
